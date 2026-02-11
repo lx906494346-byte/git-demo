@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI 问答 | 个人网站</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="theme-ai">
+  <div class="bg-orbit"></div>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <span>我的个人网站</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">个人名片</a>
+      <a href="learning.html">学习过程</a>
+      <a class="active" href="ai.html">AI 问答</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-head">
+      <h1>AI 问答界面</h1>
+      <p>这个 AI 已经内置了你的知识库，可根据你已学内容进行回答。</p>
+    </section>
+
+    <section class="ai-shell">
+      <div class="ai-left">
+        <div class="chat-window" id="chatWindow">
+          <div class="message bot">
+            <div class="bubble">
+              你好！我是你的知识库助手。可以问我：你的学习路径、技能、项目经验等。
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input id="userInput" type="text" placeholder="输入你的问题，例如：你最近学了什么？" />
+          <button id="sendBtn" class="btn primary">发送</button>
+        </div>
+        <div class="hint">提示：先从“技能、项目、学习方法、时间线”之类的问题开始。</div>
+      </div>
+
+      <aside class="ai-right">
+        <h2>已学知识库</h2>
+        <p class="muted">以下内容来自你自定义的知识库条目。</p>
+        <ul id="kbList" class="kb-list"></ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>更新日期：2026-02-02</span>
+    <span>© 你的名字</span>
+  </footer>
+
+  <script src="assets/ai.js"></script>
+</body>
+</html>
